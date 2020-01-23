@@ -8,7 +8,7 @@
   Author URI: https://wp-digitalexperience.com/
  */
 if (!defined('ABSPATH')) {
-	exit;
+  exit;
 }
 
 define("TMA_EXPERIENCE_MANAGER_DIVI_VERSION", "1.0.0");
@@ -22,11 +22,12 @@ require_once 'includes/tma_divi_functions.php';
 add_action("plugins_loaded", "exm_divi_plugins_loaded");
 
 
-function exm_divi_plugins_loaded() {
-	tma_exm_log("load editor plugins");
+function exm_divi_plugins_loaded()
+{
+  tma_exm_log("load editor plugins");
 
-	
-	if (\TMA\ExperienceManager\Divi\Plugins::getInstance()->beaverBuilder()) {
-		new \TMA\ExperienceManager\Divi\DiviBuilder_Integration();
-	}
+
+  //if (\TMA\ExperienceManager\Divi\Plugins::getInstance()->beaverBuilder()) {
+  new \TMA\ExperienceManager\Divi\DiviBuilder_Integration();
+  //}
 }

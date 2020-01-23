@@ -35,7 +35,7 @@ class DiviBuilder_Integration extends \TMA\ExperienceManager\Integration
 		$divi_elements = apply_filters("experience-manager/editor/divi/elements", $divi_elements);
 
 		foreach ($divi_elements as $element) {
-			exm_divi_config_fields($element);
+			$this->exm_divi_config_fields($element);
 		}
 	}
 

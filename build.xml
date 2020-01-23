@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="build addons" basedir="." default="distribution">
 	<target name="distribution">
-		<echo>build Experience Manager Beaver integration</echo>
-		<zip destfile="target/experience-manager-beaver-${version}.zip">
-			<zipfileset dir="plugin" prefix="experience-manager-beaver" excludes="nbproject/**"/>
+		<echo>build Experience Manager Divi integration</echo>
+		<zip destfile="target/experience-manager-divi-${version}.zip">
+			<zipfileset dir="plugin" prefix="experience-manager-divi" excludes="nbproject/**"/>
 		</zip>
 	</target>
 </project>
